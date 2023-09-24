@@ -8,7 +8,7 @@ import HelloWorld from './components/HelloWorld.vue'
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
-      <HelloWorld msg="Vue app V3.0.1 Docker" />
+      <HelloWorld msg="Vue app V4.0.0 Docker" />
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
