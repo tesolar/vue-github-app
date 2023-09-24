@@ -1,4 +1,4 @@
-name: 'build and deploy production'
+name: 'build and deploy production docker'
 
 on:
     push: 
