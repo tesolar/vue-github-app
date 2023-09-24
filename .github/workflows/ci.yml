@@ -5,6 +5,10 @@ on:
     branches: 
       - main
 
+# defaults:
+#   run:
+#     working-directory: ./app
+
 jobs:
   lint-job:
     runs-on: ubuntu-latest
