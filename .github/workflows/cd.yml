@@ -22,8 +22,20 @@ jobs:
         - name: Run build production (create dist production)
           run: npm run build 
     
-        - name: upload dist folder artifact
+        - name: Upload dist folder artifact
           uses: actions/upload-artifact@v3         
           with:
             name: dist-production
             path: dist
+
+    deploy-production-job:
+        needs: build-production-job
+        runs-on: ubuntu-latest
+        steps:
+          - name: Download dist folder artifact
+            uses: actions/download-artifact@v3         
+            with:
+                name: dist-production
+
+          - run: ls
+            
